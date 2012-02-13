@@ -1,0 +1,18 @@
+
+
+<div id="account_details" class="template_div">
+<div class="yui-b">
+    <div class="yui-b show_div"><div class="yui-gd">
+   	 	<div class="yui-u first show_label">Name</div>
+		<div class="yui-u"><%=h @account.name %></div>
+	</div></div>
+	<div class="yui-b show_div"><div class="yui-gd">
+    	<div class="yui-u first show_label">Description</div>
+		<div class="yui-u"><%=h @account.description %></div>
+	</div></div>
+	<div class="yui-b show_div"><div class="yui-gd">
+    	<div class="yui-u first show_label">Balance</div>
+		<div class="yui-u"><%=h real_currency @account.balance %></div>
+	</div></div>
+</div>
+</div>

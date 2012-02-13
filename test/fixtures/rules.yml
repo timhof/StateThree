@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  comp_type: MyString
+  comp_amount: 1.5
+  comp_string: MyString
+  comp_date: 2012-02-08
+  comp_action: MyString
+  account: 
+  type: 
+  user_id: 1
+  rank: 1
+  pocket: 
+
+two:
+  name: MyString
+  comp_type: MyString
+  comp_amount: 1.5
+  comp_string: MyString
+  comp_date: 2012-02-08
+  comp_action: MyString
+  account: 
+  type: 
+  user_id: 1
+  rank: 1
+  pocket: 

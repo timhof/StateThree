@@ -1,0 +1,59 @@
+
+<% yrMonthNameMap = {}
+   @months.each do |yrMonth|
+	 year = yrMonth / 100
+	 month = yrMonth % 100 
+	 yrMonthNameMap[yrMonth] = "#{Date::MONTHNAMES[month]} #{year}"
+  end
+%>
+
+<div id="month_pocket_totals" class="template_div">
+	<div id="filter_dialog" title="Filters" style="display:none;">
+		<%= render :partial => 'accounts/pocket_filters', :locals => {:path => month_pocket_totals_path(@account.id)} %>
+	</div>
+	<div class="table_div" id="month_pocket_totals_table_div">
+	  	<%= render :partial => 'month_pocket_totals_table', :locals => {:month_pocket_totals => @month_pocket_totals, :month_totals => @month_totals, :pocket_totals => @pocket_totals, :grand_total => @grand_total, :months => @months, :pockets => @pockets, :account => @account} %>
+  	</div>
+  	
+  	<div class="chart_div" id="pocket_totals_chart_div">
+	  	<%= render :partial => 'month_pocket_totals_chart', :locals => {:total_map => @pocket_totals, :idList => @pockets, :idNameMap => session[:selector].pocketIdNameMap, :label => 'Pocket'} %>
+  	</div>
+  	
+  	<div class="chart_div" id="month_totals_chart_div">
+	  	<%= render :partial => 'month_pocket_totals_chart', :locals => {:total_map => @month_totals, :idList => @months, :idNameMap => yrMonthNameMap, :label => 'Month'} %>
+  	</div>
+</div>
+
+<script type="text/javascript">
+
+	$(document).ajaxStop($.unblockUI); 
+  
+  	$(document).ready(function() {
+		$("#filter_dialog").dialog({
+	      	bgiframe: true, 
+	      	autoOpen: false, 
+	      	modal: true,
+	      	width: '850px',
+			buttons: {
+				Cancel: function() {
+					$(this).dialog('close');
+					$('#filter_commit').val('cancel');
+					$('#filter_form').submit();
+					
+				},
+				'OK': function() {
+					$(this).dialog('close');
+					$.blockUI({message: '<h1>processing...</h1>'}); 
+					$('#filter_commit').val('update');
+					$('#filter_form').submit();
+				}
+			}
+	    }); 
+	    
+		$('#menu_pocket_totals_<%= @account.id %>').addClass('sub_submenu_selected');
+  	} );
+
+</script>
+
+
+

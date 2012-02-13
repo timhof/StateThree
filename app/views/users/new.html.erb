@@ -1,0 +1,26 @@
+Register User</h2>
+ 
+<%= form_for(@user) do |f| %>
+<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+<% end %>
+
+ 
+  <%= render :partial => 'user_fields', :locals => { :f => f } %>
+ 
+  <p><%= f.label :password %></p>
+  <p><%= f.password_field :password %></p>
+ 
+  <p><%= f.label :password_confirmation %></p>
+  <p><%= f.password_field :password_confirmation %></p>
+ 
+  <p><%= f.submit "Register" %></p>
+<% end %>

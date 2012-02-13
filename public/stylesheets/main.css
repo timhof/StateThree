@@ -1,0 +1,761 @@
+
+* {
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	color: #191919;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+ol {
+	padding-left: 20px;
+}
+
+ol li {
+	padding-left: 10px;
+}
+ul li {
+	padding-left: 10px;
+	list-style: none;
+}
+
+.instruction h2{
+	padding: 5px 0 10px 0;
+}
+
+.instruction a {
+
+}
+
+select {
+	width: 80px;
+}
+
+a {
+	color: #f75d3d;
+}
+a:visited {
+	color: #f75d3d;
+}
+a:hover {
+	color: #3e3df7;
+	background: #FFFFFF;
+}
+
+#outer_frame {
+	width: 95%;
+	border-style: solid;
+	margin: 1px auto 2px auto;
+	border-width: 2px 2px 1px 2px;
+	border-color: #4f73aa;
+}
+
+#main_div {
+	width: 95%;
+	margin: 1px auto 1px auto;
+	border-style: solid;
+	border-width: 1px 2px 1px 2px;
+	border-color: #4f73aa;
+}
+
+#welcome_div {
+	width: 95%;
+	margin: 2px auto;
+	padding: 2px 2px 0 2px;
+	height: 20px;
+	line-height: 18px;
+	clear: both;
+	text-align: left;
+	color: #3e3df7;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+#new_session_login {
+	float:left;
+}
+
+#new_session_password {
+	float:left;
+}
+
+#logout_div {
+	float:right;
+}
+
+#login_form_div {
+	float:right;
+}
+
+.login_form_label {
+	padding-right: 5px;
+	font-weight: bold;
+	float: left;
+}
+
+.login_form_value {
+	padding-right: 5px;
+	float: left;
+}
+
+.main_title {
+	width: 100%;
+	text-align:center;
+	height: 75px;
+	line-height: 75px;
+	background-image: url(../images/mainDiv.gif);
+	color: #666666;
+	font-size: 14px;
+}
+
+.main_title_div_mouseover {
+	cursor: pointer;
+}
+
+#navigation{
+	width: 100%;
+	background-image: url(../images/navigationButton.gif);
+}
+
+#navigation_disabled{
+	width: 100%;
+	background-image: url(../images/navigationDisabled.gif);
+}
+
+.navigation_button {
+	height: 25px;
+	width: 15%;
+	line-height: 25px;
+	text-align: center;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	color: #FFFFFF;
+}
+
+.navigation_button_left {
+	border-width: 0 1px 0 1px;	
+}
+
+ul.navigation_tab {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	font-weight: bold;
+	color: #F4F0E5;
+	position: relative;
+	left: 5%;
+}
+
+ul.navigation_tab li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+.drop_down {
+	display: block;
+	z-index: 999;
+}
+
+.sub_navigation_button {
+	height: 25px;
+	width: 150px;
+	line-height: 25px;
+	text-align: left;
+	border-width: 0;
+	background-color: #3e3df7;
+	background-image: url(../images/navigationButton.gif);
+	color: #FFFFFF;
+}
+
+#listing_form_div {
+	border: 3px solid;
+	z-index: 1;
+}
+
+
+.template_div {
+	width: 100%;
+	text-align: center;
+	background-color: #ffffff;
+	min-height: 350px;
+	clear: both;
+	padding-bottom: 50px;
+}
+
+.table_div {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+}
+.header_row {
+	width: 100%;
+	clear: both;
+}
+
+
+#account_listing {
+
+}
+
+.header_cell{ 
+	font-weight: bold;
+	text-align: center;
+	height: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666666;
+	background-color: #3e7bf7;
+	background-image: url(../images/header.gif);
+	color: #FFFFFF;
+	
+}
+
+.data_cell{ 
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	height: 20px;
+	overflow: hidden;
+}
+
+.account_listing_header{ 
+	float: left;
+	
+}
+
+.account_listing_header_name { 
+	width: 198px;
+}
+
+.account_listing_header_balance { 
+	width: 198px;
+}
+
+.account_listing_header_options { 
+	width: 398px;
+}
+
+.account_listing_data{
+	width: 33.3%;
+	float: left;
+}
+
+.account_listing_data_name { 
+	width: 198px;
+}
+
+.account_listing_data_balance { 
+	width: 130px;
+	text-align: right;
+	padding-right: 68px;
+}
+
+.account_listing_data_options { 
+	width: 398px;
+}
+
+#account_history {
+
+}
+
+.account_history_header{ 
+	width: 158px;
+	float: left;
+}
+
+.account_history_data{
+	width: 158px;
+	float: left;
+}
+
+.account_history_data_currency{
+	width: 138px;
+	float: left;
+	text-align: right;
+	padding-right: 20px;
+}
+
+#account_journal {
+
+}
+
+.account_journal_header_date{ 
+	width: 100px;
+	float: left;
+}
+
+.account_journal_header_name{ 
+	width: 160px;
+	float: left;
+}
+
+.account_journal_header_amount_credit{ 
+	width: 135px;
+	float: left;
+}
+
+.account_journal_header_amount_debit{ 
+	width: 135px;
+	float: left;
+}
+
+.account_journal_header_balance{ 
+	width: 135px;
+	float: left;
+}
+
+.account_journal_header_options{ 
+	width: 123px;
+	float: left;
+}
+
+.account_journal_data_date{ 
+	width: 100px;
+	float: left;
+}
+
+.account_journal_data_name{ 
+	width: 160px;
+	float: left;
+}
+
+.account_journal_data_amount_credit{ 
+	width: 115px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+}
+
+.account_journal_data_amount_debit{ 
+	width: 115px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+}
+
+.account_journal_data_balance{ 
+	width: 115px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+}
+
+.account_journal_data_options{ 
+	width: 123px;
+	float: left;
+}
+
+#account_pending {
+	
+}
+
+.account_pending_header_name{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_header_description{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_header_amount{
+	width: 120px;
+	float: left;
+}
+
+.account_pending_header_date{
+	width: 120px;
+	float: left;
+}
+
+.account_pending_header_contract{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_header_options{
+	width: 128px;
+	float: left;
+}
+
+.account_pending_data_name{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_data_description{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_data_amount{
+	width: 100px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+}
+
+.account_pending_data_date{
+	width: 120px;
+	float: left;
+}
+
+.account_pending_data_contract{
+	width: 140px;
+	float: left;
+}
+
+.account_pending_data_options{
+	width: 128px;
+	float: left;
+}
+
+#pending {
+	
+}
+
+.pending_header_name{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_header_description{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_header_amount{ 
+	width: 115px;
+	float: left;
+}
+
+.pending_header_date{ 
+	width: 80px;
+	float: left;
+}
+
+.pending_header_contract{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_header_account{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_header_options{ 
+	width: 111px;
+	float: left;
+}
+	
+.pending_data_name{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_data_description{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_data_amount{ 
+	width: 95px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+}
+
+.pending_data_date{ 
+	width: 80px;
+	float: left;
+}
+
+.pending_data_contract{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_data_account{ 
+	width: 120px;
+	float: left;
+}
+
+.pending_data_options{ 
+	width: 111px;
+	float: left;
+}
+
+#account_deposit {
+
+}
+
+#account_withdraw {
+
+}
+
+#account_new {
+
+}
+
+#contract_credit {
+}
+
+#contract_debit {
+}
+
+.page_title_div {
+	text-align: center;
+	height: 60px;
+	line-height: 25px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+#date_span_div {
+	text-align: center;
+	border-style: solid;
+	border-width: 0px;
+	clear:both;
+}
+
+.account_name {
+	color: #3e3df7;
+}
+
+.contract_name {
+	color: #3e3df7;
+}
+
+.transaction_name {
+	color: #3e3df7;
+}
+
+.type_div {
+	clear: both;
+}
+
+.detail_div {
+	text-align: center;
+	clear: both;
+}
+
+.data_row {
+	clear: both;
+}
+
+.header_row {
+	clear: both;
+}
+
+.form_div {
+	width: 500px;
+	position: absolute;
+	left: 250px;
+	top: 100px;
+	background: #D7F73D;
+	padding: 3px;
+	text-align: center;
+}
+
+
+.form_element {
+	margin: 3px;
+	text-align: left;
+	width: 100%;
+}
+
+.form_label {
+	font-weight: bold;
+	text-align: right;
+	width: 245px;
+	float: left;
+	clear: both;
+	padding-right: 5px;
+}
+
+.form_value {
+	
+}
+
+.form_edit_value {
+	text-align: left;
+	width: 245px;
+	padding-left: 5px;
+}
+
+.popup_calendar_div {
+	position: absolute;
+	top: 50px;
+	left: 415px;	
+}
+.submit_button_div {
+	margin: 3px;
+	text-align: center;
+	width: 100%;
+}
+
+.submit_button{
+	color: green;
+}
+
+#new_account_name{
+}
+
+#new_account_description{
+}
+
+#new_account_type{
+}
+
+#new_account_balance{
+}
+
+#new_account_active{
+}
+
+#new_account_submit{
+}
+#new_contract_name {
+}
+#new_contract_description {
+}
+#new_contract_date_start {
+}
+#new_contract_date_end {
+
+}
+#new_contract_type {
+}
+#new_contract_full_date {
+
+}
+#full_date_text{
+	display: none;
+}
+#full_date_calendar{
+	display: none;
+}
+#new_contract_day_of_month {
+}
+#new_contract_day_of_month_alt {
+}
+#new_contract_weekday {
+}
+#new_contract_autopay {
+
+}
+#new_contract_autopay_account {
+
+}
+#new_contract_active {
+  display: none;
+}
+#new_contract_amount {
+  clear: both;
+}
+#new_contract_submit {
+}
+
+.overdue {
+	font-weight: bold;
+	background-color: #D7F73D;
+}
+
+.overdue div{
+	font-weight: bold;
+	background-color: #D7F73D;
+}
+
+.listing_link {
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.detail_label {
+	font-weight: bold;
+	text-align: right;
+	width: 395px;
+	float: left;
+	clear: both;
+	padding-right: 5px;
+}
+
+.detail_value {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.option_link_span {
+	
+}
+
+.navselected {
+	background-image: url(../images/navigationButtonMouseover.gif);
+	color: #FFFFFF;
+}
+
+.navmouseover {
+	background-image: url(../images/navigationPadding.gif);
+	cursor: pointer;
+}
+
+.subnavselected {
+	background-image: url(../images/navigationPadding.gif);
+	color: #FFFFFF;
+}
+
+.subnavmouseover {
+	background-image: url(../images/navigationPadding.gif);
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#flashdiv {
+	position: absolute;
+	color: green;
+}
+
+.instruction {
+	text-align: left;
+	padding-left: 100px;
+	display:none;
+}
+
+#introduction {
+	padding: 20px 0 20px 0;
+}
+
+.intro{
+	text-align: center;
+}
+
+.stateli {
+	font-weight: bold;
+	color: #4f73aa;
+}
+
+#footer {
+	width: 95%;
+	height: 50px;
+	line-height: 50px;
+	margin: 2px auto 1px auto;
+	border-style: solid;
+	border-width: 1px 2px 2px 2px;
+	border-color: #4f73aa;
+	font-size: 10px;
+	text-align: right;
+}

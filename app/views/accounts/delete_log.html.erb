@@ -1,0 +1,14 @@
+
+
+<div id="delete_log" class="template_div">
+	<%= render :partial => 'transactions/transactions_div', :locals => {:transactions => @transactions, :account => @account, :showBalance => false, :path => account_journal_path(@account.id), :showRestore => true, :showFilter => false, :showDeactivate => false} %>
+</div><!-- delete_log -->
+
+<script type="text/javascript">
+  	$(document).ready(function() {
+		$('#menu_delete_log_<%= @account.id %>').addClass('sub_submenu_selected');
+  	} );
+</script>
+
+
+

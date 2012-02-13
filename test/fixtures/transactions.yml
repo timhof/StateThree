@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  trans_date: 2012-02-08 15:49:10
+  amount: 1.5
+  account: 
+  user_id: 1
+  pocket: 
+  active: false
+
+two:
+  name: MyString
+  description: MyString
+  trans_date: 2012-02-08 15:49:10
+  amount: 1.5
+  account: 
+  user_id: 1
+  pocket: 
+  active: false

@@ -1,0 +1,366 @@
+
+html, body {
+	margin: 0;
+	height: 100%;
+	#font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	background-color: #eeeeee;
+}
+
+a{
+	text-decoration: none;
+	color: #5263AF;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+
+img{
+	border-width: 0;
+}
+
+#doc3 {margin:auto;}
+
+#welcome_div {
+	height: 25px;
+	line-height: 25px;
+	clear: both;
+	text-align: left;
+	color: #000066;
+	font-weight: bold;
+	overflow: hidden;
+	background-image: url(../images/bank_header_navigation.gif);
+	margin: 0.2em 0.5em 0.2em 0.5em;
+	-moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+} 
+
+.header{
+	height: 55px;
+	line-height:50px;
+	margin: 0.1em 0.2em;
+	text-align: center;
+	font-size: 197%;
+	letter-spacing:8px;
+	font-weight: bold;
+	border-style: solid;
+	background: #1a1e3b;
+	color: #ffffff;
+	border-width: 0;
+	-moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+}
+
+	
+#main_div {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0;
+}
+
+#main_image_div img {
+	border-width: 2px;
+	border-style: solid;
+	-moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    width: 100%;
+}
+
+#menu{
+	font-weight: bold;
+	border: 1px solid;
+	width:18%;
+	float:left;
+	background: #999CAF;
+	margin: 0 5px 0 5px;
+	-moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+}
+
+.menu_link{
+	color: #D7F73D;	
+}
+
+.menu_link visited{
+	color: #D7F73D;	
+}
+
+.unavailable{
+	color: red;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.menu_button{
+	height: 30px;
+	line-height: 30px;
+	padding: 2px;
+	font-weight: bold;
+	color: #ffffff;
+	background: #4C5275;
+	letter-spacing: 1.5px;
+	text-align: left;
+}
+
+.submenu_div{
+	
+	text-align: left;
+}
+
+.submenu_button{
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 1.5px;
+	text-align: left;
+}
+
+.sub_submenu_button{
+	height: 25px;
+	line-height: 25px;
+	padding-left: 40px;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 1.5px;
+	text-align: left;
+}
+
+.sub_submenu_selected{
+	background: #fba593;
+}
+
+.menu_button_selected{
+}
+
+.menu_mouseover{
+
+}
+
+.submenu_mouseover{
+	cursor: pointer;
+	background: #CEC4B1;
+	color: #4C5275;
+}
+
+.button_mouseover{
+	cursor: pointer;
+	background-color: #CEC4B1;
+	color: #4C5275;
+}
+
+.filter_checkbox{
+	font-size: 85%;
+}
+
+#flash_div{
+	color: green;
+	text-align: center;
+}
+
+#content_div{
+	width: 80%;
+	float: left;
+	
+}
+
+#report_table td{
+	white-space: nowrap;
+	font-size: 90%;
+}
+
+.show_div{
+	min-height: 25px;
+	line-height: 25px;
+	border-style: dotted;
+	border-width: 0 0 1px 0;
+	clear: both;
+}
+
+.show_label{
+	font-weight: bold;
+}
+.nowrap_cell{
+	white-space: nowrap;
+}
+
+.table_button {  
+     width: auto;   
+     border: 0;  
+     font-size: 85%; 
+     -moz-border-radius: 5px;  
+     -webkit-border-radius: 5px;  
+     background: #25293A;
+     color: #ffffff;
+} 
+   
+.button {  
+     width: auto;  
+     padding: 2px 15px;   
+     border: 0;  
+     font-size: 128%; 
+	 font-weight: bold;
+     font-weight: bold; 
+     -moz-border-radius: 5px;  
+     -webkit-border-radius: 5px;  
+     background: #25293A;
+     color: #ffffff;
+}
+  
+.login_button {  
+	height: 20px;
+	margin-right: 5px;
+	font-size: 85%;
+	margin-bottom: 2px;
+    width: auto;  
+    padding: 2px 15px;   
+    border: 0;  
+    font-size: 100%; 
+	font-weight: bold;
+    font-weight: bold; 
+    -moz-border-radius: 2px;  
+    -webkit-border-radius: 1px;  
+    background: #25293A;
+    color: #ffffff;
+}
+	
+.filter_title_div{
+	font-weight: bold;
+	font-size: 135%;
+}
+
+.filter_checkbox_div{
+	text-align: left;
+}
+
+.form_button_container{
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+
+
+.table_button_container{
+	width: 50%;
+	text-align: right;
+	float:right;
+	clear:right;	
+}
+
+
+.form_button{
+	padding: 5px 5px 5px 0;
+}
+
+.transaction_incomplete{
+	color: #999999;
+	font-weight: bold;
+}
+
+label {    
+	float: left;    
+	width: 10em;    
+	margin-right: 1em;  
+	font-weight: bold;
+}
+
+fieldset {  
+	margin: 0.5em 0 0 0;  
+	padding: 0;  
+	text-align: left;
+	clear: both;
+	border: 1px solid;
+	border-color: #999999;
+}  
+
+fieldset.submit {  
+	border-style: none; 
+	margin: 0.5em 0 0 0; 
+}
+
+legend {  
+	margin-left: 1em;  
+	font-weight: bold;  
+	font-weight:700;
+	padding:0.3em;
+}  
+
+fieldset ul {  
+	padding: .1em 1em 0 1em;  
+	list-style: none;  
+}  
+fieldset li {  
+	padding-bottom: 0.5em;  
+}  
+
+ .clear {clear:both}   
+ /* remove the list style */  
+ #nav {  
+     margin:0;   
+     padding:0;   
+     list-style:none;  
+ }     
+       
+     /* make the LI display inline */  
+     /* it's position relative so that position absolute */  
+     /* can be used in submenu */  
+     #nav li {   
+         display:block;   
+         background:#ccc;   
+         position:relative;  
+         z-index:50;   
+         margin:0 1px;  
+       	padding: 0px;
+     }  
+           
+     /* this is the parent menu */  
+     #nav li a {  
+         display:block;   
+         padding:8px 5px 0 5px;   
+         font-weight:700;   
+         text-decoration:none;   
+         color:#fff;   
+         text-align:center;   
+	     color:#333;  
+     }  
+   
+       
+     /* you can make a different style for default selected value */  
+     #nav a.selected {  
+         color:#f00;  
+     }  
+       
+         /* submenu, it's hidden by default */  
+         #nav ul {  
+             position:absolute;   
+             left:10em;   
+             top: 0em;
+             display:none;   
+             margin:0;   
+             padding:0;   
+             list-style:none;  
+             z-index:500;
+         }  
+         
+           
+         #nav ul li {  
+             width:100%;   
+             float:left;   
+             border-top:1px solid #fff;  
+         }  
+           
+         /* display block will make the link fill the whole area of LI */  
+         #nav ul a {  
+             display:block;    
+             width: 100%;
+             height:15px;  
+             padding: 8px 0;   
+             color:#666;  
+         }  
+           
+         #nav ul a:hover {  
+             text-decoration:underline;    
+         }  
